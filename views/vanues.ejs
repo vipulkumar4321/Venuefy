@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<h1> all vanues </h1>
+
+<a href="/vanues/new"> Add New Vanue </a>
+
+<!--Vanues -->
+<% vanues.forEach(function(vanue) { %>
+<div>
+    <h4> <%= vanue.name %> </h4>
+    <img src="<%= vanue.image %>">
+</div>
+<% }); %>
+
+<%- include("partials/footer") %>
