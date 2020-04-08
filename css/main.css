@@ -1,6 +1,6 @@
-/* types of vanues */
+/* types of venues */
 
-/* #typeOfVanues ul a {
+/* #typeOfvenues ul a {
   display: inline-block;
   color: red;
    text-align: center; 
@@ -9,31 +9,127 @@ list-style-type: circle;
 transition: all 0.3s;
 }
 
-#typeOfVanues ul a:hover {
+#typeOfvenues ul a:hover {
   color: #d4c6b5;
   margin-left: 85px;
   font-size: 1.2rem;
   transition: all 0.3s;
 }
 
-#typeOfVanues {
+#typeOfvenues {
   margin-left: auto;
   margin-right: auto;
 } */
 
-.box1 {
+.big {
+  /* width: 645px; */
+  width: 40em;
+  /* height: 590px; */
+  height: 40em;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.small {
+  /* width: 500px;
+  height: 420px; */
+  width: 30em;
+  height: 30em;
+  margin-left: 10px;
+  margin-top: 50px;
+  border: 1px solid black;
+}
+
+.color1 {
+  background-color: #d1c2af;
+}
+
+.color2 {
+  background-color: #201f24;
+}
+
+.rode {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#mainNavbar {
+  font-size: 2em;
+  background: transparent;
+}
+
+.active {
+  font-size: 1.1em;
+}
+
+.signInUP {
+  border-radius: 1.5em;
+  background-color: #201f24;
+  color: white;
+}
+
+.signInUP:hover {
+  color: white;
+}
+
+.vsTeam {
+  border-radius: 1.5em;
+  background-color: #201f24;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.vsTeam:hover {
+  color: white;
+}
+
+
+/* #VenuefyYourVenue */
+.vertical-center {
+  min-height: 70%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  word-wrap: break-word;
+  align-items: center;
+  text-align: center;
+  background-color: #d4c6b5;
+  border-top: 1px solid #201f24;
+  border-bottom: 1px solid #201f24;
+}
+
+/*.box1 {
   /* width: 515px;
   height: 435px;
-  padding: 50px;*/
+  padding: 50px;
   border: 1px solid black;
   background-color: #d1c2af;
   color: #201f24;
 }
 
-.box2 {
+/* .box2 {
   /* width: 515px;
   height: 435px;
-  padding: 50px;*/
+  padding: 50px;
+  border: 1px solid black;
+  background-color: #201f24;
+  color: #d1c2af;
+} */
+
+.box1 h2 {
+  border: 1px solid black;
+  background-color: #d1c2af;
+  color: #201f24;
+}
+
+.box2 h2 {
   border: 1px solid black;
   background-color: #201f24;
   color: #d1c2af;
@@ -44,6 +140,8 @@ transition: all 0.3s;
   color: #df5252;
   text-shadow: #df5252;
   transition: all 0.3s;
+  font-size: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #venuesType div div a h3:hover {
@@ -53,11 +151,19 @@ transition: all 0.3s;
   font-size: 1.8rem;
 }
 
-/* End types of vanues */
+/* End types of venues */
 
 .venuesImage {
   margin-bottom: 2em;
+  width: 900px;
+  height: 400px;
+  object-fit: fill;
   /* transition: all 0.3s; */
+}
+
+.venuesImages {
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .venuesImage:hover {
@@ -67,23 +173,9 @@ transition: all 0.3s;
 }
 
 
-html,
-body {
+html body {
   height: 100%;
-}
-
-.vertical-center {
-  min-height: 65%;
-  /* Fallback for browsers do NOT support vh unit */
-  min-height: 65vh;
-  /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background-color: #d4c6b5;
-  border-top: 1px solid #201f24;
-  border-bottom: 1px solid #201f24;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .dot {
@@ -99,11 +191,31 @@ body {
 /* venuefy */
 .center {
   display: block;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   /* width: 50%; */
   margin-top: 8rem;
   margin-bottom: 7rem;
+}
+
+/* we are different */
+.weAreDifferent1 {
+  width: 110%;
+  height: 110%;
+}
+
+.weAreDifferent2 {
+  width: 135%;
+  height: 135%;
+  text-align: right;
+}
+
+.img-circle {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 /* Footer */

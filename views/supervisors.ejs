@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<h1> all supervisors </h1>
+
+<a href="/supervisors/newsupervisor"> Add New Venue </a>
+
+<!--Supervisors -->
+<% supervisors.forEach(function(supervisor) { %>
+<div>
+    <h4> <%= supervisor.name %> </h4>
+    <img src="<%= supervisor.image %>">
+</div>
+<% }); %>
+
+<%- include("partials/footer") %>

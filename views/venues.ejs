@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<h1> all venues </h1>
+
+<a href="/venues/new"> Add New Venue </a>
+
+<!--Venues -->
+<% venues.forEach(function(venue) { %>
+<div>
+    <h4> <%= venue.name %> </h4>
+    <img src="<%= venue.image %>">
+</div>
+<% }); %>
+
+<%- include("partials/footer") %>
