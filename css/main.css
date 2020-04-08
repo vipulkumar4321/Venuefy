@@ -199,6 +199,13 @@ html body {
   margin-bottom: 7rem;
 }
 
+.center2 {
+  width: 94%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* we are different */
 .weAreDifferent1 {
   width: 110%;
