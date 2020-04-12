@@ -44,7 +44,7 @@ var supervisors = [{
   },
   {
     name: "Parikshit Ghosh",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYWc2w79SMjbdwArVPVIfUnczpvWoicHPXvDqp2C7bSDMNCcnE&usqp=CAU"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_iPK0PZKoziiBDeDhkGECT7qGbnPD81Pkqolink4ucXgZP_nF&usqp=CAU"
   },
   {
     name: "Jayanta Banik",
