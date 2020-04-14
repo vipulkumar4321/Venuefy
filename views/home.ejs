@@ -1,5 +1,10 @@
 <%- include("partials/header") %>
 
+<!--Feedback button-->
+<button type="button" class="btn btn-lg align-middle btnFeedback font-weight-bold">Feedback</button>
+
+
+
 <!--Nav-Bar-->
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
   <a class="navbar-brand" href="/home">
@@ -97,11 +102,53 @@
 
 <!--Search bar-->
 <div class="jumbotron vertical-center">
-  <div class="container">
+  <div class="container ">
     <h1 class="display-4 font-weight-bold">#VenuefyYourVenue</h1>
-    <p class="lead">Search</p>
+    <!-- <p class="lead">Search</p> -->
+
+
+    <div class="searchBar container">
+      <div class="dropdown d-inline">
+        <button class="btn btn-lg dropdown-toggle searchBarBtns" type="button" data-toggle="dropdown"><i
+            class="fas fa-city mr-3"></i>city
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu searchBarBtns">
+          <li><a href="#">City1</a></li>
+          <li><a href="#">City2</a></li>
+          <li><a href="#">City3</a></li>
+        </ul>
+      </div>
+      <div class="vl d-inline"></div>
+
+      <div class="dropdown d-inline">
+        <button class="btn btn-lg dropdown-toggle searchBarBtns" type="button" data-toggle="dropdown">Select Your Area
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu searchBarBtns">
+          <li><a href="#">Area1</a></li>
+          <li><a href="#">Area2</a></li>
+          <li><a href="#">Area3</a></li>
+        </ul>
+      </div>
+
+      <div class="vl d-inline"></div>
+      <button class="btn btn-lg searchBarBtns d-inline">
+        <i class="fa fa-search d-inline" aria-hidden="true"></i>
+      </button>
+      <div class="vl d-inline"></div>
+
+      <button class="btn btn-lg searchBarBtns">
+        Nearby
+        <i class="fas fa-map-marker-alt ml-2"></i>
+      </button>
+
+
+    </div>
   </div>
 </div>
+
+
+
 <!--search bar end-->
 
 <!--Types of Venues-->
@@ -201,7 +248,7 @@
 <br />
 <!--supervisors -->
 <br />
-<h1 class="display-3 text-center font-weight-bold ">Our Venue Supervisors (VS)</h1>
+<h1 class="display-3 text-center font-weight-bolder">Our Venue Supervisors (VS)</h1>
 <div class="row ml-auto mr-auto justify-content-around">
   <% supervisors.forEach(function(supervisor) { %>
   <div class="col-lg-2 col-md-4 col-sm-12">
@@ -230,45 +277,22 @@
 <h1 class="display-3 text-center font-weight-bold mb-4">We are Different!</h1>
 <br>
 <br>
-<!-- <div class="row ml-2 mr-2 justify-content-center">
-  <div class="col-lg-3 col-sm-12 mr-3 align-self-center ">
-    <img class="weAreDifferent1" src="https://i.imgur.com/5kCs56f.png">
-  </div>
-  <div class="col-lg-3 col-sm-12 mr-3 align-self-center">
-    <img class="weAreDifferent1" src="https://i.imgur.com/g7ZfVP6.png">
-  </div>
-  <div class="col-lg-3 col-sm-12 align-self-center">
-    <img class="weAreDifferent2" src="https://i.imgur.com/wW6o9bU.png">
-  </div>
-</div>
 
-<div class="row ml-2 mr-2 justify-content-center">
-  <div class="col-lg-3 col-sm-12  weAreDifferentDiv align-self-center">
-    <img class="weAreDifferent2" src="https://i.imgur.com/6B1VEqJ.png">
-  </div>
-  <div class="col-lg-3 col-sm-12 mr-3 align-self-center">
-    <img class="weAreDifferent1" src="https://i.imgur.com/vRgcxAP.png">
-  </div>
-  <div class="col-lg-3 col-sm-12 align-self-center">
-    <img class="weAreDifferent1" src="https://i.imgur.com/VJqMcN4.png">
-  </div>
-</div> -->
-
-<!-- <div class="row justify-content-around">
-  <div class="col-lg-3 col-sm-12 text-center box1 text-wrap">
+<!-- <div class="row justify-content-around mb-4">
+  <div class="col-lg-3 col-sm-12 text-center box1 boxS1 text-wrap">
     <h2 class="display-4 align-self-center">
       <div class="font-weight-bold">Venue Supervisors</div>
       For Venue Assistance
     </h2>
   </div>
-  <div class="col-lg-3 col-sm-12 text-center box2">
+  <div class="col-lg-3 col-sm-12 text-center box2 boxS1">
     <h2 class="display-4 font-weight-bold">
       Real Video Reviews
       <div class="font-weight-lighter d-inline">Of</div>
       Real Customers
     </h2>
   </div>
-  <div class="col-lg-4 col-sm-12 text-center box1">
+  <div class="col-lg-4 col-sm-12 text-center box1 boxS2">
     <h2 class="display-4 p-5">
       <div class="font-weight-bold">FREE Event Coordinator</div>
       On Booking Your Venue With Us
@@ -276,20 +300,20 @@
   </div>
 </div>
 
-<div class="row justify-content-around">
-  <div class="col-lg-4 col-sm-12 text-center box1">
+<div class="row justify-content-around mt-4">
+  <div class="col-lg-4 col-sm-12 text-center box1 boxS2">
     <h2 class="display-4 p-5">
       <div class="font-weight-bold">Free Event Management Consultancy</div>
       On Booking Venues With Us
     </h2>
   </div>
-  <div class="col-lg-3 col-sm-12 text-center box2">
+  <div class="col-lg-3 col-sm-12 text-center box2 boxS1">
     <h2 class="display-4">
       <div class="font-weight-bold">No Star Rating</div>
       Review System
     </h2>
   </div>
-  <div class="col-lg-3 col-sm-12 text-center box1">
+  <div class="col-lg-3 col-sm-12 text-center box1 boxS1">
     <h2 class="display-4">
       <div class="font-weight-bold">Best Discounts</div>
       In The Country For Your Venues
@@ -297,7 +321,7 @@
   </div>
 </div> -->
 
-<img src="https://i.imgur.com/xchrXOB.png" alt="venuefy" class="center2" />
+<img src="https://i.imgur.com/nxPif4S.png" alt="venuefy" class="center2" />
 
 <!-- <div class="row rode">
   <div class="small color1">
