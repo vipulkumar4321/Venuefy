@@ -4,7 +4,6 @@
 <button type="button" class="btn btn-lg align-middle btnFeedback font-weight-bold">Feedback</button>
 
 
-
 <!--Nav-Bar-->
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
   <a class="navbar-brand" href="/home">
@@ -84,7 +83,7 @@
         <a class="nav-link" href="#">About Us</a>
       </li>
       <li class="nav-item ml-2">
-        <a class="nav-link" href="#">Venders</a>
+        <a class="nav-link" href="#">Vendors</a>
       </li>
       <li class="nav-item ml-2">
         <a class="nav-link" href="#">Blogs</a>
@@ -151,46 +150,47 @@
 
 <!--search bar end-->
 
-<!--Types of Venues-->
-<div id="venuesType" class="text-center">
-  <div class="row justify-content-around mb-4">
-    <div class="col-lg-3 col-sm-12">
-      <a href="#">
-        <h3 font-weight-bold>
-          Hotel Banquets
-          <span class="dot float-right hidden-sm d-none d-lg-block ml-2"></span>
-        </h3>
-      </a>
-    </div>
-    <div class="col-lg-2 col-sm-12">
-      <a href="#">
-        <h3>
-          pubs <span class="dot float-right hidden-sm d-none d-lg-block"></span>
-        </h3>
-      </a>
-    </div>
-    <div class="col-lg-2 col-sm-12">
-      <a href="#">
-        <h3>
-          Bars <span class="dot float-right hidden-sm d-none d-lg-block"></span>
-        </h3>
-      </a>
-    </div>
-    <div class="col-lg-2 col-sm-12">
-      <a href="#">
-        <h3>Resorts <span class="dot float-right d-none d-lg-block"></span></h3>
-      </a>
-    </div>
-    <div class="col-lg-3 col-sm-12">
-      <a href="#">
-        <h3>Banquet Hall</h3>
-        <!-- <span class="dot float-right invisible"></span> -->
-      </a>
+<div class="container">
+  <!--Types of Venues-->
+  <div id="venuesType" class="text-center ">
+    <div class="row justify-content-around mb-4">
+      <div class="col-lg-3 col-sm-12">
+        <a href="#">
+          <h3 font-weight-bold>
+            Hotel Banquets
+            <span class="dot float-right hidden-sm d-none d-lg-block ml-2"></span>
+          </h3>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <a href="#">
+          <h3>
+            Pubs/Bars <span class="dot float-right hidden-sm d-none d-lg-block"></span>
+          </h3>
+        </a>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-12">
+        <a href="#">
+          <h3>
+            Bars <span class="dot float-right hidden-sm d-none d-lg-block"></span>
+          </h3>
+        </a>
+      </div> -->
+      <div class="col-lg-3 col-sm-12">
+        <a href="#">
+          <h3>Resorts <span class="dot float-right d-none d-lg-block"></span></h3>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <a href="#">
+          <h3>Banquet Hall</h3>
+          <!-- <span class="dot float-right invisible"></span> -->
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- <div id="typeOfVenues" class="container">
+  <!-- <div id="typeOfVenues" class="container">
   <ul>
     <a href="#">
       <h4>
@@ -219,66 +219,66 @@
     </a>
   </ul>
 </!-->
-<!--End Types of venues-->
+  <!--End Types of venues-->
 
-<br />
-<!--Venues -->
-<br />
-<div class="venuesImages mt-4">
+  <br />
+  <!--Venues -->
+  <br />
+  <div class="venuesImages mt-4">
+    <div class="row">
+      <% venues.forEach(function(venue) { %>
+      <div class="col-lg-6 col-sm-12">
+        <!-- <h4> <%= venue.name %> </h4> -->
+        <img src="<%= venue.image %>" class="img-thumbnail shadow mb-2 venuesImage" />
+      </div>
+      <% }); %>
+    </div>
+  </div>
+  <!-- <a href="/venues">Venues</a> -->
+  <!--venues end-->
+
+  <!--venuefy-->
   <div class="row">
-    <% venues.forEach(function(venue) { %>
-    <div class="col-lg-6 col-sm-12">
-      <!-- <h4> <%= venue.name %> </h4> -->
-      <img src="<%= venue.image %>" class="img-thumbnail shadow mb-2 venuesImage" />
+    <div class="col-lg-12">
+      <img src="https://i.imgur.com/TjxOOPq.png" alt="venuefy" class="center img-fluid" />
+    </div>
+  </div>
+  <!--End Venuefy-->
+
+  <br />
+  <!--supervisors -->
+  <br />
+  <h1 class="display-3 text-center font-weight-bolder">Our Venue Supervisors (VS)</h1>
+  <div class="row ml-auto mr-auto justify-content-around">
+    <% supervisors.forEach(function(supervisor) { %>
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <img src="<%= supervisor.image %>" class="img-circle center shadow mb-2" />
+      <h4 class="text-center"> <%= supervisor.name %> </h4>
     </div>
     <% }); %>
   </div>
-</div>
-<!-- <a href="/venues">Venues</a> -->
-<!--venues end-->
-
-<!--venuefy-->
-<div class="row">
-  <div class="col-lg-12">
-    <img src="https://i.imgur.com/TjxOOPq.png" alt="venuefy" class="center img-fluid" />
+  <!-- <a href="/supervisors">Supervisors</a> -->
+  <!--venues end-->
+  <br>
+  <div class="text-center">
+    <button type="button" onclick="location.href = '/supervisors/new';"
+      class="btn ml-auto mr-auto btn-lg font-weight-bold vsTeam">
+      Join our VS Team
+    </button>
   </div>
-</div>
-<!--End Venuefy-->
 
-<br />
-<!--supervisors -->
-<br />
-<h1 class="display-3 text-center font-weight-bolder">Our Venue Supervisors (VS)</h1>
-<div class="row ml-auto mr-auto justify-content-around">
-  <% supervisors.forEach(function(supervisor) { %>
-  <div class="col-lg-2 col-md-4 col-sm-12">
-    <img src="<%= supervisor.image %>" class="img-circle center shadow mb-2" />
-    <h4 class="text-center"> <%= supervisor.name %> </h4>
-  </div>
-  <% }); %>
-</div>
-<!-- <a href="/supervisors">Supervisors</a> -->
-<!--venues end-->
-<br>
-<div class="text-center">
-  <button type="button" onclick="location.href = '/supervisors/new';"
-    class="btn ml-auto mr-auto btn-lg font-weight-bold vsTeam">
-    Join our VS Team
-  </button>
-</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--We are different-->
+  <h1 class="display-3 text-center font-weight-bold mb-4">We are Different!</h1>
+  <br>
+  <br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--We are different-->
-<h1 class="display-3 text-center font-weight-bold mb-4">We are Different!</h1>
-<br>
-<br>
-
-<!-- <div class="row justify-content-around mb-4">
+  <!-- <div class="row justify-content-around mb-4">
   <div class="col-lg-3 col-sm-12 text-center box1 boxS1 text-wrap">
     <h2 class="display-4 align-self-center">
       <div class="font-weight-bold">Venue Supervisors</div>
@@ -321,9 +321,9 @@
   </div>
 </div> -->
 
-<img src="https://i.imgur.com/nxPif4S.png" alt="venuefy" class="center2" />
+  <img src="https://i.imgur.com/nxPif4S.png" alt="venuefy" class="center2" />
 
-<!-- <div class="row rode">
+  <!-- <div class="row rode">
   <div class="small color1">
   </div>
   <br>
@@ -340,6 +340,6 @@
   <div class="small color1">
   </div>
 </div> -->
-<!--End We are different-->
-
+  <!--End We are different-->
+</div>
 <%- include("partials/footer") %>

@@ -21,10 +21,12 @@ transition: all 0.3s;
   margin-right: auto;
 } */
 
+
 .btnFeedback {
   position: fixed;
   top: 50%;
-  right: 0;
+  right: -35px;
+  z-index: 1;
   border-radius: 0%;
   padding: 0px 5px 0px 5px;
   transform: rotate(270deg);
@@ -67,7 +69,7 @@ transition: all 0.3s;
 }
 
 #mainNavbar {
-  font-size: 2em;
+  font-size: 3em;
   background: white;
   border-bottom: 1px solid black;
 }
@@ -77,6 +79,7 @@ transition: all 0.3s;
 } */
 
 .signInUP {
+  font-size: .6em;
   border-radius: 1.5em;
   background-color: #201f24;
   color: white;
@@ -132,7 +135,7 @@ transition: all 0.3s;
 
 .searchBarBtns {
   color: white;
-  background: #201f24;
+  /* background: #201f24; */
 }
 
 .searchBarBtns:hover {
@@ -177,6 +180,10 @@ transition: all 0.3s;
   transition: all 0.3s;
   font-size: 2em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#venuesType div div a {
+  text-decoration: none;
 }
 
 #venuesType div div a h3:hover {
@@ -253,8 +260,12 @@ html body {
 }
 
 .img-circle {
-  width: 225px;
-  height: 225px;
+  /* width: 225px;
+  height: 225px; */
+
+  width: 175px;
+  height: 175px;
+
   border-radius: 50%;
   border: 1px solid black;
   object-fit: cover;
