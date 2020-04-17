@@ -21,7 +21,6 @@ transition: all 0.3s;
   margin-right: auto;
 } */
 
-
 .btnFeedback {
   position: fixed;
   top: 50%;
@@ -69,7 +68,7 @@ transition: all 0.3s;
 }
 
 #mainNavbar {
-  font-size: 3em;
+  font-size: 2em;
   background: white;
   border-bottom: 1px solid black;
 }
@@ -79,7 +78,7 @@ transition: all 0.3s;
 } */
 
 .signInUP {
-  font-size: .6em;
+  font-size: 0.6em;
   border-radius: 1.5em;
   background-color: #201f24;
   color: white;
@@ -126,7 +125,7 @@ transition: all 0.3s;
   margin-top: 75px;
   /* display: flex;
   flex-wrap: wrap; */
-  width: 63%;
+  width: 65%;
   background: #201f24;
   color: white;
   border-radius: 50px;
@@ -135,6 +134,7 @@ transition: all 0.3s;
 
 .searchBarBtns {
   color: white;
+  font-size: 1.5em;
   /* background: #201f24; */
 }
 
